@@ -99,7 +99,7 @@ export const Smallholder = () => {
                   Lahan Sawit
                 </div>
                 <div className="font-heading text-6xl md:text-7xl tracking-tighter font-light">
-                  <CountUp end={d.palm.area} duration={2} separator="." preserveValue />
+                  <CountUp end={162322} duration={2} separator="." preserveValue />
                   <span className="text-2xl text-[#F4F1EB]/60 ml-3">Ha</span>
                 </div>
                 <div className="text-sm text-[#F4F1EB]/60 mt-2">&gt;90% dari total lahan perkebunan Kabupaten</div>
