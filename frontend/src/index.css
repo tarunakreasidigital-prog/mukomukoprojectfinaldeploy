@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #F4F1EB;
+    color: #1E382B;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-feature-settings: 'liga' 1, 'kern' 1;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+::selection {
+    background: #1E382B;
+    color: #F4F1EB;
+}
+
+/* Grain texture overlay */
+.grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.08;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+}
+
+@layer base {
+    :root {
+        --background: 42 26% 93%;
+        --foreground: 145 31% 17%;
+        --card: 45 27% 98%;
+        --card-foreground: 145 31% 17%;
+        --popover: 45 27% 98%;
+        --popover-foreground: 145 31% 17%;
+        --primary: 145 31% 17%;
+        --primary-foreground: 42 26% 93%;
+        --secondary: 42 22% 88%;
+        --secondary-foreground: 145 31% 17%;
+        --muted: 42 22% 88%;
+        --muted-foreground: 137 7% 39%;
+        --accent: 100 21% 40%;
+        --accent-foreground: 42 26% 93%;
+        --destructive: 13 51% 47%;
+        --destructive-foreground: 42 26% 93%;
+        --border: 42 22% 85%;
+        --input: 42 22% 85%;
+        --ring: 145 31% 17%;
+        --radius: 0;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #EAE5D9;
+}
+::-webkit-scrollbar-thumb {
+    background: #1E382B;
+    border: 2px solid #EAE5D9;
+}
+
+.marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.dotted-bg {
+    background-image: radial-gradient(#1E382B 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.06;
+}

@@ -1,0 +1,203 @@
+{
+  "project_name": "Jejak Agraria Mukomuko",
+  "theme": "light",
+  "archetype": "1_organic_and_earthy",
+  "design_philosophy": "The 'Living Ledger'. A data-rich scrolling experience that feels less like a corporate dashboard and more like an editorial piece on nature and growth. Merging authoritative typography (Financial Times style) with organic, earthy colors and high-end environmental photography. Data must be allowed to breathe within vast negative space.",
+  "colors": {
+    "background": {
+      "base": "#F4F1EB",
+      "surface": "#FCFBF8",
+      "surface_alt": "#EAE5D9",
+      "overlay": "rgba(30, 56, 43, 0.4)"
+    },
+    "text": {
+      "primary": "#1E382B",
+      "secondary": "#5C6A5F",
+      "muted": "#8A948D",
+      "inverse": "#F4F1EB"
+    },
+    "brand": {
+      "primary": "#1E382B",
+      "secondary": "#B5533B",
+      "tertiary": "#8A7056",
+      "accent": "#5F7C51"
+    },
+    "chart": {
+      "palm": "#1E382B",
+      "rubber": "#8A7056",
+      "rice": "#5F7C51",
+      "corn": "#D4A373",
+      "cassava": "#B5533B"
+    },
+    "border": {
+      "default": "#E3DFD3",
+      "focus": "#1E382B"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond, serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scales": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl tracking-tighter leading-none font-medium",
+      "h2": "text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight font-medium",
+      "h3": "text-2xl md:text-3xl tracking-tight leading-snug font-medium",
+      "body": "text-base md:text-lg leading-relaxed font-normal",
+      "label": "text-xs uppercase tracking-[0.2em] font-bold",
+      "data_large": "text-4xl md:text-6xl font-light tracking-tighter"
+    },
+    "rules": {
+      "no_default_sans": true,
+      "editorial_hierarchy": "Headings must use Cormorant Garamond. Data numbers and body text must use Manrope. Avoid bolding headings unnecessarily; rely on scale and font-family contrast."
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-20 md:py-32",
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "grid_gap": "gap-8 md:gap-12",
+    "border_radius": "rounded-none",
+    "card_padding": "p-8 md:p-12",
+    "layout_modes": {
+      "editorial_bento": "grid grid-cols-1 md:grid-cols-12 gap-8 items-start",
+      "data_row": "flex flex-col md:flex-row items-baseline justify-between py-6 border-b border-[#E3DFD3]"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#1E382B] text-[#F4F1EB] hover:bg-[#15281F] transition-colors duration-300 px-8 py-4 rounded-none text-sm uppercase tracking-widest",
+      "secondary": "bg-transparent border border-[#1E382B] text-[#1E382B] hover:bg-[#1E382B] hover:text-[#F4F1EB] transition-colors duration-300 px-8 py-4 rounded-none text-sm uppercase tracking-widest"
+    },
+    "cards": {
+      "default": "bg-[#FCFBF8] border border-[#E3DFD3] rounded-none hover:-translate-y-1 transition-transform duration-300"
+    },
+    "tabs": {
+      "list": "flex border-b border-[#E3DFD3] w-full",
+      "trigger": "px-8 py-4 text-lg font-medium text-[#8A948D] data-[state=active]:text-[#1E382B] data-[state=active]:border-b-2 data-[state=active]:border-[#1E382B] transition-all bg-transparent rounded-none",
+      "content": "pt-8"
+    },
+    "charts": {
+      "tooltip": "bg-[#FCFBF8] border border-[#E3DFD3] p-4 shadow-sm text-sm font-body text-[#1E382B] rounded-none",
+      "axis": "text-[#8A948D] text-xs font-mono"
+    }
+  },
+  "motion": {
+    "scroll": {
+      "library": "lenis",
+      "easing": "ease-out"
+    },
+    "reveals": {
+      "library": "framer-motion",
+      "default_variant": {
+        "initial": { "opacity": 0, "y": 40 },
+        "animate": { "opacity": 1, "y": 0 },
+        "transition": { "duration": 0.8, "ease": [0.16, 1, 0.3, 1] }
+      }
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "id": "hero_palm_aerial",
+        "url": "https://images.unsplash.com/photo-1690244564081-38c405aff6d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwzfHxwYWxtJTIwb2lsJTIwcGxhbnRhdGlvbiUyMGluZG9uZXNpYSUyMGFlcmlhbHxlbnwwfHx8fDE3ODEwMTQ0Mjl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Aerial view of a road surrounded by palm trees with a dramatic sunset, used for the main Hero background with a dark overlay.",
+        "usage": "hero_background"
+      },
+      {
+        "id": "rice_fields",
+        "url": "https://images.unsplash.com/photo-1544644181-af0e1e14916f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwzfHxyaWNlJTIwZmllbGRzJTIwaGFydmVzdCUyMGluZG9uZXNpYXxlbnwwfHx8fDE3ODEwMTQ0Mjl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Lush green rice terraces, used as an atmospheric image in the Food Crops (Agriculture Stats) section.",
+        "usage": "food_crops_section"
+      },
+      {
+        "id": "indonesian_farmer",
+        "url": "https://images.unsplash.com/photo-1512631118612-7bf02594062b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxmYXJtZXIlMjBpbmRvbmVzaWElMjBoYXJ2ZXN0fGVufDB8fHx8MTc4MTAxNDQyOXww&ixlib=rb-4.1.0&q=85",
+        "description": "Shallow focus of an Indonesian farmer, used in the Smallholder Plantation Stats section.",
+        "usage": "smallholder_section"
+      }
+    ],
+    "icons": {
+      "library": "lucide-react",
+      "strokeWidth": 1.5
+    }
+  },
+  "sections_and_data_mapping": [
+    {
+      "id": "hero",
+      "type": "hero_overlay",
+      "title": "Kekayaan Agraria Mukomuko",
+      "subtitle": "Sebuah narasi data tentang pertumbuhan, lahan, dan masa depan pertanian di Kabupaten Mukomuko, Provinsi Bengkulu.",
+      "visual": "hero_palm_aerial",
+      "features": ["smooth_scroll_indicator", "animated_counter_for_total_land_108987_Ha"]
+    },
+    {
+      "id": "tbs_pricing",
+      "type": "editorial_bento",
+      "title": "Ketetapan Harga TBS (Periode II April 2026)",
+      "data": {
+        "Indeks_K": "83.55%",
+        "CPO": "Rp 16.253,46",
+        "PK": "Rp 15.379,28"
+      },
+      "features": ["massive_typography_for_prices", "table_for_price_by_age_3_to_21_years"]
+    },
+    {
+      "id": "plantation_companies",
+      "type": "data_visualization",
+      "title": "Sebaran Lahan Perusahaan",
+      "data": {
+        "PT Agro Muko": "22.914 Ha",
+        "PT Dharia Darma Pratama": "18.001 Ha"
+      },
+      "features": ["interactive_bar_chart_or_treemap", "recharts_integration"]
+    },
+    {
+      "id": "smallholder_stats",
+      "type": "tabbed_comparison",
+      "title": "Statistik Perkebunan Rakyat",
+      "tabs": ["2024", "2025"],
+      "features": ["shadcn_tabs", "animated_counters_for_production_and_land", "comparative_bar_chart"]
+    },
+    {
+      "id": "irrigation_plan",
+      "type": "timeline_flow",
+      "title": "Rencana Peningkatan Irigasi 2015",
+      "data": ["D.I Air Payang II (1.032m)", "D.I Air Lubuk Enau (336m)", "D.I Air Lubuk Bangko (304m)", "3 Unit Bendungan"],
+      "features": ["vertical_timeline_with_scroll_reveal"]
+    },
+    {
+      "id": "food_crops",
+      "type": "grid_cards",
+      "title": "Statistik Pertanian 2025",
+      "data": {
+        "Padi": "8.627,04 Ha (Produktivitas 65,08 Ku/Ha)",
+        "Jagung": "111,23 Ku/Ha",
+        "Ubi Kayu": "329,72 Ku/Ha"
+      },
+      "features": ["icon_cards", "image_background_rice_fields"]
+    },
+    {
+      "id": "lp2b_distribution",
+      "type": "interactive_map_or_table",
+      "title": "Sebaran Lahan LP2B",
+      "subtitle": "Lahan Pertanian Pangan Berkelanjutan (Total 4.675,170 Ha di 15 Kecamatan)",
+      "highlight": "Kecamatan Lubuk Pinang (2.149,596 Ha / 46%)",
+      "features": ["interactive_svg_map_if_possible_or_sortable_data_table", "highlight_lubuk_pinang_on_hover"]
+    }
+  ],
+  "accessibility_and_testing": {
+    "contrast": "Ensure text over images uses proper overlays or text-shadows to meet APCA contrast requirements.",
+    "testing_attributes": "All interactive elements, tabs, filters, and major data points MUST include data-testid attributes (e.g., data-testid='tab-2024', data-testid='chart-tbs-price')."
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, lucide-react, recharts, react-countup, lenis (or @studio-freight/lenis), and @fontsource/cormorant-garamond, @fontsource/manrope.",
+    "Do NOT use 'Inter', 'Roboto', or generic fonts for headings. Stick strictly to Cormorant Garamond for headings and Manrope for data/body.",
+    "Implement the layout with pure HTML/Tailwind using pure grid and flexbox for layout, relying on immense spacing (py-32, gap-12).",
+    "Use Shadcn UI primarily for the Tabs (2024 vs 2025 comparison) and Select/Dropdowns. The rest should be bespoke editorial designs.",
+    "Ensure all numbers animate on scroll using react-countup.",
+    "Do not use dark mode. Stick to the 'Light' Earthy theme defined in the colors object.",
+    "Build the application completely frontend-only with static data extracted from this JSON structure.",
+    "Use the exact image URLs provided in the assets section. DO NOT use placeholder images."
+  ]
+}
