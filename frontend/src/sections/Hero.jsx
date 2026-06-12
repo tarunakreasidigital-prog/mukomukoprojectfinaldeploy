@@ -80,7 +80,7 @@ export const Hero = () => {
           className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-16 pt-10 border-t border-[#F4F1EB]/15"
         >
           {[
-            { value: 162322.34, label: "Hektar Sawit", suffix: "" },
+            { value: 162322, label: "Hektar Sawit", suffix: "" },
             { value: 4675.17, label: "Ha LP2B", suffix: "", dec: 2 },
             { value: 53795, label: "Rumah Tangga", suffix: "" },
             { value: 15, label: "Kecamatan", suffix: "" },
